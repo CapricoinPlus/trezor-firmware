@@ -32,7 +32,7 @@ async def show_xpubs(
             curve_name=coin.curve_name,
         )
         xpub = node.serialize_public(coin.xpub_magic)
-        desc = "XPUB #%d" % (i + 1)
+        desc = "xXPUB #%d" % (i + 1)
         desc += " (yours)" if i == multisig_index else " (others)"
         if await show_xpub(ctx, xpub, desc=desc, cancel=cancel):
             return True

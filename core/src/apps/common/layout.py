@@ -22,7 +22,7 @@ async def show_address(
     ctx: wire.Context,
     address: str,
     desc: str = "Confirm address",
-    cancel: str = "QR",
+    cancel: str = "aQR",
     network: str = None,
 ) -> bool:
     text = Text(desc, ui.ICON_RECEIVE, ui.GREEN)
